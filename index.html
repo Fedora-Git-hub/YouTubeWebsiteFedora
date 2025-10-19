@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Fedora</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">My Basic Website</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main container">
+        <section id="home" class="hero">
+            <h2>Welcome</h2>
+            <p>Hello! I am Fedora, I made the website as a school project and it went well! I'm gonna use this for a YouTube Website!</p>
+            <a class="primary-btn" href="#about">Learn more</a>
+        </section>
+
+        <section id="about" class="about">
+            <h3>About</h3>
+            <p>I am a Youtuber, Aiming for 5,000 subscribers.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h3>Contact</h3>
+           <p>You can get to me via <a href="https://www.discord.gg/zBdECm5Cgp">Discord!</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>&copy; <span id="year"></span> My Basic Website</small>
+        </div>
+    </footer>
+
+    <script>
+        // Populate footer year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
